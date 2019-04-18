@@ -27,6 +27,6 @@ class API::V1::AgentsController < ApplicationController
 
   def library_params
     # whitelist params
-    params.permit(:price, :quality)
+    params.permit(:price, :quality, :season_id, :movie_id, :user_id)
   end
 end
